@@ -1,0 +1,172 @@
+.header {
+    height: 55px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+}
+
+.leftsection {
+    display: flex;
+    align-items: center;
+
+}
+
+.hamburger {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+
+.ytlogo {
+    height: 20px;
+}
+
+.middlesection {
+    flex: 1;
+    margin-right: 35px;
+    margin-left: 70px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.searchbutton {
+    height: 40px;
+    width: 66px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 0px;
+    margin-left: -1px;
+    margin-right: 10px;
+}
+
+.searchbutton, .voicesearchbutton, .uploadiconcontainer, .notificationcontainer, .ytappscontainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.searchbutton .tooltip,
+.voicesearchbutton .tooltip,
+.uploadiconcontainer .tooltip,
+.notificationcontainer .tooltip,
+.ytappscontainer .tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.searchbutton:hover .tooltip,
+.voicesearchbutton:hover .tooltip,
+.uploadiconcontainer:hover .tooltip,
+.notificationcontainer:hover .tooltip,
+.ytappscontainer:hover .tooltip {
+    opacity: 1;
+}
+
+.search {
+    height: 25px;
+    margin-top: 5px;
+}
+
+.voicesearchbutton {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(248, 248, 248);
+}
+
+.searchbar {
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0px;
+}
+
+.searchbar::placeholder {
+    font-family: Robot, Arial;
+    font-size: 16px;
+}
+
+.voicesearch {
+    height: 24px;
+    margin-top: 7px;
+}
+
+.rightsection {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.upload {
+    height: 24px;
+}
+
+.ytapps {
+    height: 24px;
+}
+
+.notifs {
+    height: 24px;
+}
+
+.mypfp {
+    height: 32px;
+    border-radius: 16px;
+}
+
+.notificationcontainer {
+    position: relative;
+}
+
+.notificationsnumber {
+    position: absolute;
+    top: -0.5px;
+    right:-3px;
+    background-color: rgb(208, 4, 4);
+    color: white;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-radius: 10px;
+
+}
